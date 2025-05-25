@@ -1,0 +1,243 @@
+.lawyer-justice-container {
+  padding: 60px 20px;
+  background-color: #fffdfa;
+  display: flex;
+  justify-content: center;
+  border: 4px solid #d5b26f;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lawyer-justice-content {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.lawyer-justice-left {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.lawyer-justice-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.lawyer-justice-right {
+  flex: 1 1 55%;
+}
+
+.lawyer-justice-subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #a68b66;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: 600;
+}
+
+.lawyer-justice-subtitle::before,
+.lawyer-justice-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background-color: #a68b66;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.lawyer-justice-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.lawyer-justice-highlight {
+  color: #c6aa7e;
+}
+
+.lawyer-justice-description {
+  font-size: 17px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.lawyer-justice-description strong {
+  color: #222;
+}
+
+.lawyer-justice-colored {
+  color: #aa8d6f;
+  font-weight: 500;
+}
+
+.lawyer-justice-light {
+  color: #777;
+  font-weight: 500;
+}
+
+.lawyer-justice-colored-light {
+  color: #c4aa90;
+  font-weight: 500;
+}
+
+.lawyer-justice-points {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.lawyer-justice-points ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lawyer-justice-points li {
+  font-size: 16px;
+  color: #111;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lawyer-justice-icon {
+  color: #d4af7f;
+  font-size: 13px;
+}
+
+.lawyer-justice-btn {
+  background-color: #111;
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-justice-btn:hover {
+  background-color: #333;
+}
+
+.lawyer-justice-arrow {
+  font-size: 14px;
+}
+/* Existing CSS remains the same */
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 992px) {
+  .lawyer-justice-content {
+    gap: 20px;
+  }
+  .lawyer-justice-left {
+    flex: 1 1 100%;
+  }
+  .lawyer-justice-right {
+    flex: 1 1 100%;
+  }
+  .lawyer-justice-points {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lawyer-justice-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .lawyer-justice-description {
+    text-align: justify;
+
+    font-size: 16px;
+  }
+  .lawyer-justice-points {
+    margin-bottom: 0px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lawyer-justice-points ul {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .lawyer-justice-container {
+    padding: 40px 20px;
+  }
+  .lawyer-justice-subtitle {
+    text-align: center;
+    font-size: 12px;
+  }
+  .lawyer-justice-title {
+    font-size: 24px;
+  }
+  .lawyer-justice-description {
+    font-size: 15px;
+  }
+  .lawyer-justice-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .lawyer-justice-points li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .lawyer-justice-title {
+    font-size: 20px;
+  }
+  .lawyer-justice-description {
+    font-size: 14px;
+  }
+  .lawyer-justice-points li {
+    font-size: 14px;
+  }
+  .lawyer-justice-btn {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+}
+
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.lawyer-justice-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  animation: floatEffect 4s ease-in-out infinite;
+}
+

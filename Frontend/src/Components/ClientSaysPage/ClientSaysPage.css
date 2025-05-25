@@ -1,0 +1,281 @@
+/* ====== Container & Layout ====== */
+.Clients-says-section {
+  padding: 60px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+/* ====== Left & Right Boxes ====== */
+.Clients-says-left,
+.Clients-says-right {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.Clients-says-left {
+  background-color: #1a1d23;
+  color: #fff;
+}
+
+/* ====== Quote Icon ====== */
+.Clients-says-quote-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #e94e77;
+}
+
+/* ====== Titles ====== */
+.Clients-says-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  position: relative;
+  letter-spacing: 0.03em;
+}
+
+/* ====== Divider Bar ====== */
+.Clients-says-divider {
+  width: 60px;
+  height: 4px;
+  background-color: #e94e77;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+/* ====== Testimonial Text ====== */
+.Clients-says-testimonial-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #e2e2e2;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
+}
+
+/* ====== Client Info Container ====== */
+.Clients-says-client-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* ====== Client Photo ====== */
+.Clients-says-client-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #e94e77;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.Clients-says-client-photo:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Client Name & Position ====== */
+.Clients-says-client-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.Clients-says-client-position {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* ====== Client Signature Image ====== */
+.Clients-says-client-sign {
+  width: 100px;
+  height: auto;
+  margin-top: 15px;
+  opacity: 0.8;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
+  transition: opacity 0.3s ease;
+}
+.Clients-says-client-sign:hover {
+  opacity: 1;
+}
+
+/* ====== Client Points Section (Right) ====== */
+.Clients-says-client-point {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.Clients-says-client-point:hover {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 24px 16px;
+}
+
+.Clients-says-client-point:last-child {
+  border-bottom: none;
+}
+
+/* ====== Icons in Points ====== */
+.Clients-says-point-icon {
+  font-size: 28px;
+  color: #1a73e8;
+  margin-top: 4px;
+  transition: color 0.3s ease;
+}
+
+.Clients-says-client-point:hover .Clients-says-point-icon {
+  color: #e94e77;
+}
+
+/* ====== Titles & Text in Points ====== */
+.Clients-says-point-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.Clients-says-point-text {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* ====== Swiper Pagination Styling ====== */
+.clients-swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.clients-swiper-bullet {
+  background: #e94e77;
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.clients-swiper-bullet-active {
+  background: #1a73e8;
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+/* Existing CSS remains the same */
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .Clients-says-section {
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .Clients-says-left,
+  .Clients-says-right {
+    padding: 20px;
+  }
+
+  .Clients-says-title {
+    font-size: 24px;
+  }
+
+  .Clients-says-testimonial-text {
+    font-size: 16px;
+  }
+
+  .Clients-says-client-info {
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+  }
+
+  .Clients-says-client-photo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Clients-says-client-name {
+    font-size: 16px;
+  }
+
+  .Clients-says-client-position {
+    font-size: 12px;
+  }
+
+  .Clients-says-client-point {
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .Clients-says-point-icon {
+    font-size: 24px;
+  }
+
+  .Clients-says-point-title {
+    font-size: 16px;
+  }
+
+  .Clients-says-point-text {
+    font-size: 14px;
+  }
+}
+
+/* Media Query for Smaller Desktop Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .Clients-says-section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .Clients-says-left,
+  .Clients-says-right {
+    padding: 30px;
+  }
+
+  .Clients-says-title {
+    font-size: 26px;
+  }
+
+  .Clients-says-testimonial-text {
+    font-size: 17px;
+  }
+}
+
+/* Media Query for Large Desktop Screens (min-width: 1600px) */
+@media (min-width: 1600px) {
+  .Clients-says-section {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .Clients-says-left,
+  .Clients-says-right {
+    padding: 50px;
+  }
+
+  .Clients-says-title {
+    font-size: 32px;
+  }
+
+  .Clients-says-testimonial-text {
+    font-size: 20px;
+  }
+}

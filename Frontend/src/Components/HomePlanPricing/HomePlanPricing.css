@@ -1,0 +1,271 @@
+/* Base Section */
+.HomePlan-section {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.HomePlan-heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.HomePlan-description {
+  font-size: 18px;
+  color: #666;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Cards Wrapper */
+.HomePlan-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Individual Card */
+.HomePlan-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 320px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.HomePlan-card::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Highlighted Card */
+.highlighted {
+  border: 2px solid #e94e77;
+  transform: scale(1.07);
+  z-index: 2;
+}
+
+.HomePlan-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  z-index: 1;
+  position: relative;
+}
+
+/* Price Block */
+.HomePlan-card-price {
+  font-size: 38px;
+  font-weight: 800;
+  color: #e94e77;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  z-index: 1;
+  position: relative;
+}
+
+.HomePlan-card-price span {
+  font-size: 24px;
+  position: relative;
+  top: -6px;
+}
+
+.per-month {
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+}
+
+/* Features List */
+.HomePlan-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 20px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.HomePlan-card-features li {
+  font-size: 15.5px;
+  color: #333;
+  padding: 12px 0;
+  border-bottom: 1px dashed #ddd;
+  transition: color 0.3s;
+}
+
+.HomePlan-card-features li::before {
+  content: "✔";
+  color: #16c784;
+  margin-right: 10px;
+}
+
+.HomePlan-card-features li.disabled {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.HomePlan-card-features li.disabled::before {
+  content: "✘";
+  color: #e94e77;
+}
+
+/* Button Styling */
+.HomePlan-btn {
+  border: none;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+/* Button Colors */
+.HomePlan-btn.basic {
+  background-color: #4d9fef;
+}
+
+.HomePlan-btn.basic:hover {
+  background-color: #2b87e1;
+  transform: scale(1.05);
+}
+
+.HomePlan-btn.medium {
+  background-color: #e94e77;
+}
+
+.HomePlan-btn.medium:hover {
+  background-color: #d43c67;
+  transform: scale(1.05);
+}
+
+.HomePlan-btn.advance {
+  background-color: #16c784;
+}
+
+.HomePlan-btn.advance:hover {
+  background-color: #12a56e;
+  transform: scale(1.05);
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .HomePlan-heading {
+    font-size: 30px;
+  }
+
+  .HomePlan-description {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .HomePlan-card {
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  .HomePlan-card-title {
+    font-size: 20px;
+  }
+
+  .HomePlan-card-price {
+    font-size: 32px;
+  }
+
+  .HomePlan-card-price span {
+    font-size: 20px;
+  }
+
+  .HomePlan-card-features li {
+    font-size: 14.5px;
+    padding: 10px 0;
+  }
+
+  .HomePlan-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+/* Small to medium devices (600px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .HomePlan-heading {
+    font-size: 34px;
+  }
+
+  .HomePlan-description {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .HomePlan-card {
+    padding: 35px 25px;
+    width: 95%;
+    max-width: 360px;
+  }
+
+  .HomePlan-card-title {
+    font-size: 22px;
+  }
+
+  .HomePlan-card-price {
+    font-size: 34px;
+  }
+
+  .HomePlan-card-price span {
+    font-size: 22px;
+  }
+
+  .HomePlan-btn {
+    padding: 13px 32px;
+    font-size: 14.5px;
+  }
+}
+
+/* Tablets and small desktops (769px - 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .HomePlan-card {
+    padding: 38px 28px;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .HomePlan-card-title {
+    font-size: 23px;
+  }
+
+  .HomePlan-card-price {
+    font-size: 36px;
+  }
+
+  .HomePlan-btn {
+    padding: 14px 34px;
+  }
+}
+

@@ -1,0 +1,192 @@
+.hero-below-wrapper {
+  background: linear-gradient(135deg, #1c1c23, #252533, #1c1c23);
+  padding: 50px 20px;
+  border: 1px solid #d5b26f;
+border-radius: 100px 0px 100px 0px;
+}
+
+.hero-below-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-below-card {
+  background-color: #1c1c23;
+  padding: 30px 25px;
+  border-radius: 20px;
+  width: calc(33.33% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-below-card::after {
+  content: "";
+  position: absolute;
+  height: 120%;
+  width: 120%;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 10%, transparent 70%);
+  top: -10%;
+  left: -10%;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.hero-below-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08);
+}
+
+.hero-below-active {
+  border: 2px solid #ffce3d;
+  background-color: #2a2a40;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.hero-below-icon {
+  font-size: 38px;
+  color: #ffce3d;
+  margin-bottom: 20px;
+}
+
+.hero-below-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-below-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero-below-text {
+  font-size: 15px;
+  color: #aaaaaa;
+  line-height: 1.6;
+}
+/* Large Tablets and Small Laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero-below-container {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .hero-below-card {
+    width: calc(50% - 15px);
+  }
+}
+
+/* Tablets and Large Phones (600px - 767px) */
+@media (max-width: 767px) {
+  .hero-below-wrapper {
+    padding: 40px 15px;
+    border-radius: 60px 0px 60px 0px;
+  }
+
+  .hero-below-card {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .hero-below-title {
+    font-size: 20px;
+  }
+
+  .hero-below-text {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices (up to 599px) */
+@media (max-width: 599px) {
+  .hero-below-wrapper {
+    padding: 30px 10px;
+    border-radius: 40px 0px 40px 0px;
+  }
+
+  .hero-below-card {
+    padding: 20px 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-below-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .hero-below-title {
+    font-size: 18px;
+  }
+
+  .hero-below-text {
+    font-size: 13px;
+  }
+}
+
+
+/* Add these animations to your existing CSS */
+
+/* Pulse animation for the icon */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.hero-below-icon {
+  /* Existing styles */
+  animation: pulse 3s infinite;
+}
+
+/* Glow animation for the active card */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+.hero-below-active {
+  /* Existing styles */
+  animation: glow 2s infinite;
+}
+
+/* Breathe animation for the cards */
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-below-card {
+  /* Existing styles */
+  animation: breathe 4s infinite;
+}

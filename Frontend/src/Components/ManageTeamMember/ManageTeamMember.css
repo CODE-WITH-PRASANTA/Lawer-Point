@@ -1,0 +1,160 @@
+/* General Container */
+.manage-team-member-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title Section */
+.manage-team-member-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.manage-team-member-line {
+  width: 80px;
+  height: 4px;
+  background-color: #e94e77;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+/* Card Styling */
+.manage-team-member-card {
+  background: #c6bcbc;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Image */
+.manage-team-member-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Text Info */
+.manage-team-member-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.manage-team-member-role {
+  font-size: 15px;
+  font-style: italic;
+  color: #e94e77;
+  margin-bottom: 20px;
+}
+
+/* Contact Info */
+.manage-team-member-contact {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.manage-team-member-icon {
+  color: #e94e77;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Social Icons */
+.manage-team-member-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.manage-team-member-socials a {
+  width: 38px;
+  height: 38px;
+  background-color: #f1f5f9;
+  color: #4b5563;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.manage-team-member-socials a:hover {
+  background-color: #e94e77;
+  color: #fff;
+}
+
+/* Swiper Customization */
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background: #d1d5db;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e94e77;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .manage-team-member-title {
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .manage-team-member-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .manage-team-member-title {
+    font-size: 28px;
+  }
+
+
+  .manage-team-member-card {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .manage-team-member-title {
+    font-size: 24px;
+  }
+
+  .manage-team-member-contact {
+    font-size: 13px;
+  }
+
+  .manage-team-member-socials a {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+}

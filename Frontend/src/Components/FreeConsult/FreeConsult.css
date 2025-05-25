@@ -1,0 +1,257 @@
+.Free-Consultant-section {
+  position: relative;
+  background: url('../../assets/contact_consult.webp') no-repeat center center/cover;
+  padding: 60px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.Free-Consultant-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.Free-Consultant-container {
+  position: relative;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.Free-Consultant-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.Free-Consultant-form {
+  flex: 0 1 450px;
+  padding: 42px 38px;
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  color: white;
+  transition: box-shadow 0.35s ease;
+}
+
+
+.Free-Consultant-title {
+  font-size: 3rem;
+  margin-bottom: 22px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.Free-Consultant-description {
+    text-align: justify;
+  font-size: 1.15rem;
+  margin-bottom: 38px;
+  line-height: 1.75;
+  color: #ddd;
+  font-weight: 500;
+  max-width: 100%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.Free-Consultant-form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Free-Consultant-form-row {
+  display: flex;
+  gap: 22px;
+  flex-wrap: nowrap;
+}
+
+.Free-Consultant-input,
+.Free-Consultant-select {
+  flex: 1;
+  padding: 16px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-weight: 600;
+  transition: border-color 0.35s ease, background-color 0.35s ease;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.Free-Consultant-input::placeholder,
+.Free-Consultant-select::placeholder {
+  color: #f0f0f0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.Free-Consultant-input:focus,
+.Free-Consultant-select:focus {
+  border-color: #c3a16b;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  box-shadow: 0 0 10px #c3a16b;
+}
+
+.Free-Consultant-textarea {
+  resize: vertical;
+  width: 100%;
+  flex: 1 1 100%;
+  min-height: 140px;
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  outline: none;
+  transition: border-color 0.35s ease, background-color 0.35s ease;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.Free-Consultant-textarea::placeholder {
+  color: #f0f0f0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.Free-Consultant-textarea:focus {
+  border-color: #c3a16b;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  box-shadow: 0 0 10px #c3a16b;
+}
+
+.Free-Consultant-submit-btn {
+  background-color: #c3a16b;
+  color: #1e1e1e;
+  padding: 18px 42px;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 900;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 6px 20px rgba(195, 161, 107, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Free-Consultant-submit-btn:hover {
+  background-color: #a98d5d;
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(169, 141, 93, 0.9);
+}
+
+/* Large Desktops and Laptops */
+@media (max-width: 1400px) {
+  .Free-Consultant-form {
+    flex: 0 1 420px;
+    padding: 36px 32px;
+    border: 4px solid #d5b26f;
+  }
+}
+
+/* Small Desktops and Laptops */
+@media (max-width: 1200px) {
+  .Free-Consultant-form {
+    flex: 0 1 380px;
+    padding: 30px 26px;
+  }
+  .Free-Consultant-title {
+    font-size: 2.6rem;
+  }
+}
+
+/* Tablets and Large Mobile Devices */
+@media (max-width: 992px) {
+  .Free-Consultant-wrapper {
+    justify-content: center;
+  }
+  .Free-Consultant-form {
+    flex: 0 1 500px;
+    padding: 40px 36px;
+  }
+  .Free-Consultant-title {
+    font-size: 2.8rem;
+  }
+}
+
+/* Small Tablets and Mobile Devices */
+@media (max-width: 768px) {
+  .Free-Consultant-section {
+border: 2px solid #d5b26f;
+border-radius: 30px;
+    background: none;
+    padding: 40px 0;
+    min-height: auto;
+  }
+  .Free-Consultant-form {
+    flex: 0 1 90%;
+    padding: 30px 26px;
+  }
+  .Free-Consultant-form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .Free-Consultant-input,
+  .Free-Consultant-select {
+    width: 100%;
+  }
+
+  .Free-Consultant-section::before{
+    background-color: #777777;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .Free-Consultant-section {
+    padding: 30px 0;
+  }
+  .Free-Consultant-form {
+    padding: 20px 16px;
+  }
+  .Free-Consultant-title {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+  .Free-Consultant-description {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+  .Free-Consultant-submit-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 320px) {
+  .Free-Consultant-title {
+    font-size: 1.8rem;
+  }
+  .Free-Consultant-description {
+    font-size: 0.9rem;
+  }
+  .Free-Consultant-submit-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

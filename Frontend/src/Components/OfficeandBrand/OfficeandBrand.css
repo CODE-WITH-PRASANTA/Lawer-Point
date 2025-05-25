@@ -1,0 +1,135 @@
+/* Global Styles */
+:root {
+  --primary-color: #1f3050;
+  --secondary-color: #b9975b;
+  --white: #ffffff;
+  --light-gray: #f4f7fa;
+  --dark-gray: #223b61;
+}
+
+.ob-wrapper {
+  background-color: var(--light-gray);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 0;
+}
+
+/* Office Section */
+.ob-office-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.ob-office-card {
+  background: var(--dark-gray);
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ob-office-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ob-icon {
+  background: var(--secondary-color);
+  color: var(--white);
+  font-size: 22px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.ob-office-card:hover .ob-icon {
+  background: #977c4d;
+}
+
+.ob-office-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ob-office-card hr {
+  width: 50px;
+  border: 1px solid var(--white);
+  margin: 10px auto 20px;
+}
+
+.ob-office-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Carousel Section */
+.ob-brand-carousel-section {
+  padding: 20px 20px;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.ob-carousel-title {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Swiper Slide Card */
+.ob-brand-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ob-brand-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Swiper Pagination Styling */
+.swiper-pagination-bullets {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 1;
+  transition: 0.3s ease;
+  width: 5px;
+  height: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ob-office-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ob-office-card {
+    margin-bottom: 20px;
+  }
+}

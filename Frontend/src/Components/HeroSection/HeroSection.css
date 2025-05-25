@@ -1,0 +1,343 @@
+.Hero-Section-wrapper {
+  background: linear-gradient(to right, rgba(8, 8, 8, 0.85), rgba(20, 20, 20, 0.7)),
+    url('../../assets/hero-bg.webp') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  position: relative;
+  margin-top: 100px;
+}
+
+.hero-full-content {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.Hero-Section-content {
+  flex: 1;
+  z-index: 2;
+}
+/* Add these animations to your existing CSS */
+
+/* Fade-in animation for the content */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation for the form */
+.slide-in {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add animation delays for a staggered effect */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Update existing classes to include animations */
+
+.Hero-Section-content {
+  flex: 1;
+  z-index: 2;
+  /* Add fade-in animation */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.Hero-Section-form-container {
+  max-width: 600px;
+  flex: 1;
+  background: #121212;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid #d5b26f;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+  /* Add slide-in animation */
+  animation: slideIn 0.8s ease-in-out;
+}
+
+/* Update headings and paragraphs to fade in with delay */
+.Hero-Section-subheading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f0c674;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  /* Add fade-in animation with delay */
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.Hero-Section-heading {
+  font-size: 50px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  /* Add fade-in animation with delay */
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.Hero-Section-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #dddddd;
+  max-width: 90%;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  text-align: justify;
+  /* Add fade-in animation with delay */
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+/* Add animation to the form fields */
+.Hero-Section-input,
+.Hero-Section-select,
+.Hero-Section-textarea {
+  /* Add fade-in animation */
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.Hero-Section-button {
+  /* Add hover animation */
+  transition: all 0.3s ease;
+}
+
+.Hero-Section-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(213, 178, 111, 0.8);
+}
+
+.Hero-Section-form-container {
+    max-width: 600px;
+  flex: 1;
+  background: #121212;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid #d5b26f;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.Hero-Section-form-title {
+  color: #f0c674;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Hero-Section-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero-Section-form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.Hero-Section-input,
+.Hero-Section-select {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #c29a55;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.Hero-Section-input::placeholder,
+.Hero-Section-textarea::placeholder {
+  color: #bbb;
+}
+
+.Hero-Section-input:focus,
+.Hero-Section-select:focus,
+.Hero-Section-textarea:focus {
+  outline: none;
+  border-color: #f0c674;
+  box-shadow: 0 0 6px #f0c67480;
+}
+
+.Hero-Section-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #c29a55;
+  background-color: #1e1e1e;
+  font-size: 16px;
+  color: #fff;
+  height: 140px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.Hero-Section-button {
+  background-color: #d5b26f;
+  color: #000;
+  font-weight: 700;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(213, 178, 111, 0.5);
+}
+
+.Hero-Section-button:hover {
+  background-color: #c29a55;
+  transform: translateY(-2px);
+}
+
+/* Overlay */
+.Hero-Section-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-radius: 0;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablets and Mini Laptops (width: 1024px and below) */
+@media (max-width: 1024px) {
+  .hero-full-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .Hero-Section-content, 
+  .Hero-Section-form-container {
+    width: 100%;
+  }
+
+  .Hero-Section-heading {
+    font-size: 40px;
+  }
+
+  .Hero-Section-subheading {
+    font-size: 20px;
+  }
+
+  .Hero-Section-description {
+    font-size: 16px;
+  }
+}
+
+/* Tablets and Large Mobiles (width: 768px and below) */
+@media (max-width: 768px) {
+  .Hero-Section-wrapper {
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .Hero-Section-heading {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .Hero-Section-subheading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .Hero-Section-description {
+    text-align: justify;
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .Hero-Section-form-container {
+    padding: 25px;
+  }
+
+  .Hero-Section-form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Small Mobiles (width: 480px and below) */
+@media (max-width: 480px) {
+  .Hero-Section-heading {
+    font-size: 28px;
+  }
+
+  .Hero-Section-subheading {
+    font-size: 16px;
+  }
+
+  .Hero-Section-description {
+    font-size: 14px;
+  }
+
+  .Hero-Section-form-title {
+    font-size: 22px;
+  }
+
+  .Hero-Section-input,
+  .Hero-Section-select,
+  .Hero-Section-textarea,
+  .Hero-Section-button {
+    font-size: 15px;
+  }
+
+  .Hero-Section-form-container {
+    padding: 20px;
+  }
+}
