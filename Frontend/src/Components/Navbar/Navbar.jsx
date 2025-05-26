@@ -42,7 +42,7 @@ const Navbar = () => {
 
           <ul className="navbar-main-links">
             <li className="navbar-link-item"><Link to="/">Home</Link></li>
-            <li className="navbar-link-item"><Link to="/services">Services</Link></li>
+            <li className="navbar-link-item"><Link to="/about">About Us</Link></li>
             <li className="navbar-link-item"><Link to="/cases">Cases</Link></li>
             <li className="navbar-link-item"><Link to="/appointment">Appointment</Link></li>
             <li className="navbar-link-item"><Link to="/pricing-details">Pricing & Details</Link></li>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
         <ul className="mobile-menu-links">
           <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link></li>
-          <li><Link to="/services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link></li>
+          <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link></li>
           <li><Link to="/cases" onClick={() => setIsMobileMenuOpen(false)}>Cases</Link></li>
           <li><Link to="/appointment" onClick={() => setIsMobileMenuOpen(false)}>Appointment</Link></li>
           <li><Link to="/pricing-details" onClick={() => setIsMobileMenuOpen(false)}>Pricing & Details</Link></li>

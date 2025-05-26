@@ -5,8 +5,10 @@ import Home from './Pages/Home/Home';
 import DownFooter from './Components/DownFooter/DownFooter';
 import { Suspense, lazy, useState, useEffect } from 'react';
 import { Atom } from 'react-loading-indicators';
+import WhatsAppBubble from './Components/WhatsAppBubble/WhatsAppBubble';
 
 const HomeLazy = lazy(() => import('./Pages/Home/Home'));
+const AboutLazy = lazy(() => import('./Pages/AboutUs/Aboutus'));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -40,7 +42,17 @@ function App() {
               <HomeLazy />
             </Suspense>
           } />
+          <Route path="/about" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <AboutLazy />
+            </Suspense>
+          } />
         </Routes>
+        <WhatsAppBubble />
         <DownFooter />
       </div>
     </div>

@@ -1,0 +1,254 @@
+.About-bestlawer-section {
+  background: linear-gradient(135deg, #2c2c3a 0%, #1b1b24 100%);
+  color: #f0f0f0;
+  padding: 30px 20px 50px;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  border: 3px solid #d5b26f;
+  border-radius: 50px;
+}
+
+.About-bestlawer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.About-bestlawer-left {
+  flex: 1 1 400px;
+  min-height: 450px;
+  max-width: 500px;
+  background-image: url('../../assets/best-lawer.webp');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.About-bestlawer-right {
+  flex: 1 1 500px;
+  padding: 30px 25px 10px;
+  max-width: 700px;
+  background: rgba(32, 32, 42, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.About-bestlawer-tagline {
+  color: #d4af37; /* Gold tone */
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.About-bestlawer-heading {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0 0 25px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.About-bestlawer-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.About-bestlawer-highlight {
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.About-bestlawer-phone {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.About-bestlawer-phone:hover {
+  color: #f5e59a;
+}
+
+.About-bestlawer-features {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.About-bestlawer-feature-item {
+  font-size: 16px;
+  color: #eee;
+  margin-bottom: 14px;
+  padding-left: 26px;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.About-bestlawer-feature-item::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 1;
+  color: #d4af37;
+}
+
+.About-bestlawer-stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.About-bestlawer-stat-box {
+  background: #d4af37;
+  color: #1b1b24;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+  padding: 30px 20px;
+  width: 180px;
+  text-align: center;
+  cursor: default;
+}
+
+.About-bestlawer-stat-icon {
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.About-bestlawer-stat-number {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0;
+  color: #1b1b24;
+  letter-spacing: 1.2px;
+}
+
+.About-bestlawer-stat-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #3b392f;
+  letter-spacing: 0.4px;
+}
+
+
+/* Existing CSS omitted for brevity... */
+
+/* Responsive Media Queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+  .About-bestlawer-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+    align-items: normal;
+  }
+
+  .About-bestlawer-left,
+  .About-bestlawer-right {
+    max-width: 100%;
+    flex: none;
+    min-height: 300px;
+  }
+
+  .About-bestlawer-left {
+    border-radius: 10px;
+  }
+
+  .About-bestlawer-right {
+    padding: 25px 20px;
+  }
+
+  .About-bestlawer-heading {
+    font-size: 32px;
+  }
+
+  .About-bestlawer-description {
+    font-size: 16px;
+  }
+
+  .About-bestlawer-stat-box {
+    width: 140px;
+    padding: 25px 15px;
+  }
+
+  .About-bestlawer-stat-number {
+    font-size: 24px;
+  }
+}
+
+/* Small devices (phones, 767px and below) */
+@media (max-width: 767px) {
+  .About-bestlawer-section {
+    padding: 20px 10px 40px;
+  }
+
+  .About-bestlawer-left {
+    min-height: 220px;
+    border-radius: 8px;
+  }
+
+  .About-bestlawer-right {
+    padding: 20px 15px;
+  }
+
+  .About-bestlawer-tagline {
+    font-size: 12px;
+  }
+
+  .About-bestlawer-heading {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .About-bestlawer-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .About-bestlawer-feature-item {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .About-bestlawer-stat-box {
+    width: 120px;
+    padding: 20px 12px;
+  }
+
+  .About-bestlawer-stat-icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .About-bestlawer-stat-number {
+    font-size: 20px;
+  }
+
+  .About-bestlawer-stat-label {
+    font-size: 14px;
+  }
+
+  .About-bestlawer-stats{
+margin-top: 20px;
+  }
+}
