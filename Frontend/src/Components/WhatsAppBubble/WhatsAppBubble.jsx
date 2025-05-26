@@ -18,15 +18,7 @@ const WhatsAppBubble = () => {
 </a>
 
         </div>
-        <div className="Whatsapp-Bubbles-Tooltip" data-tooltip="Call us">
-          <a
-            href="tel:6372545244"
-            className="Whatsapp-Bubbles-Icon Whatsapp-Bubbles-Call"
-            aria-label="Call us"
-          >
-            <FaPhoneAlt />
-          </a>
-        </div>
+    
       </div>
     </div>
   );

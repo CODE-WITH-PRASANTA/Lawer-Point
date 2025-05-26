@@ -1,11 +1,10 @@
 .Whatsapp-Bubbles-Container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2px;
+  right: 2px;
   display: flex;
   align-items: center;
-  background: #fff;
-  padding: 10px 14px;
+  padding: 5px 7px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   z-index: 9999;
@@ -14,7 +13,7 @@
 
 .Whatsapp-Bubbles-Text {
   margin-left: 12px;
-  font-size: 13px;
+  font-size: 9px;
   color: #222;
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,9 +49,6 @@
   background: linear-gradient(135deg, #25D366, #128C7E);
 }
 
-.Whatsapp-Bubbles-Call {
-  background: linear-gradient(135deg, #007bff, #0056b3);
-}
 
 .Whatsapp-Bubbles-Icon:hover {
   transform: scale(1.12);
