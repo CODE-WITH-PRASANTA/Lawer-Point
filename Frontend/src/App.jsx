@@ -12,6 +12,7 @@ const AppointmentLazy = lazy(() => import('./Pages/Appointment/Appointment'));
 const ContactLazy = lazy(() => import('./Pages/ContactUs/ContactUs'));
 const CasesLazy = lazy(() => import('./Pages/Cases/Cases'));
 const CasesDetailsLazy = lazy(() => import('./Components/CaseDetails/CaseDetails'));
+const PlanandPricingLazy = lazy(() => import('./Pages/PlanandPricing/PlanandPricing'));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -88,6 +89,15 @@ function App() {
               </div>
             }>
               <CasesDetailsLazy />
+            </Suspense>
+          } />
+          <Route path="/pricing-details" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <PlanandPricingLazy />
             </Suspense>
           } />
         </Routes>

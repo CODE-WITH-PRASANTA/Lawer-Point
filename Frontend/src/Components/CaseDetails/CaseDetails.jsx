@@ -20,11 +20,9 @@ const CaseDetails = () => {
           <span className="cases-details-BreadcrumbItem">Case Details</span>
         </div>
       </div>
-    </div>
-<CaseDetailsClear />
-
-<ManageTeamMember />
-    
+      </div>
+      <CaseDetailsClear />
+      <ManageTeamMember />
     </>
   )
 }

@@ -21,8 +21,7 @@ const CaseDetailsClear = () => {
   ];
 
   const selectedArea = 'Family Law';
-
-
+  
   const faqs = [
   {
     question: 'Creating a Prenuptial Agreement',
@@ -40,7 +39,7 @@ const CaseDetailsClear = () => {
     question: 'What Is Family Law Mediation',
     answer: 'Family law mediation is a confidential process where a neutral third party helps resolve disputes without going to court.'
   }
-];
+  ];
 
 const [openIndex, setOpenIndex] = useState(null);
 
@@ -88,57 +87,57 @@ const toggleFAQ = (index) => {
         </div>
       </aside>
 
-   <main className="Case-details-main-content">
-  <div className="Case-details-top-section">
-    <img src={Casedetailsimg} alt="Family Law" className="Case-details-image" />
-    <div className="Case-details-topic-box">
-      <h2 className="Case-details-heading">Family Law Issues:</h2>
-      <ul className="Case-details-topic-list">
-        <li>Adoptions</li>
-        <li>Child Custody and Visitation</li>
-        <li>Spousal Support</li>
-        <li>Divorce & Separations</li>
-        <li>Guardianship</li>
-        <li>Child Support & Paternity</li>
-      </ul>
-      <button className="Case-details-consultation-btn">FREE CONSULTATION</button>
+      <main className="Case-details-main-content">
+    <div className="Case-details-top-section">
+      <img src={Casedetailsimg} alt="Family Law" className="Case-details-image" />
+      <div className="Case-details-topic-box">
+        <h2 className="Case-details-heading">Family Law Issues:</h2>
+        <ul className="Case-details-topic-list">
+          <li>Adoptions</li>
+          <li>Child Custody and Visitation</li>
+          <li>Spousal Support</li>
+          <li>Divorce & Separations</li>
+          <li>Guardianship</li>
+          <li>Child Support & Paternity</li>
+        </ul>
+        <button className="Case-details-consultation-btn">FREE CONSULTATION</button>
+      </div>
     </div>
-  </div>
+
+    <section className="Case-details-section">
+      <h3 className="Case-details-subheading">About Family Law</h3>
+      <p className="Case-details-text">
+      Consultation
+  Family law consists of a body of statutes and case precedentss that govern the legal responsibilitiees between individuals who share a domestic connection. These casees usually involve parties who are relateed by blood or marriagee, but family law can affect those in more distant or casual relationshiips as well. Due to the emotionally-charged nature of moost family law cases, litigants are strongly advised to retain legal counsel
+      </p>
+    </section>
 
   <section className="Case-details-section">
-    <h3 className="Case-details-subheading">About Family Law</h3>
+    <h3 className="Case-details-subheading">Know Your Rights</h3>
     <p className="Case-details-text">
     Consultation
-Family law consists of a body of statutes and case precedentss that govern the legal responsibilitiees between individuals who share a domestic connection. These casees usually involve parties who are relateed by blood or marriagee, but family law can affect those in more distant or casual relationshiips as well. Due to the emotionally-charged nature of moost family law cases, litigants are strongly advised to retain legal counsel
+  Family law consists of a body of statutes and case precedentss that govern the legal responsibilitiees between individuals who share a domestic connection. These casees usually involve parties who are relateed by blood or marriagee, but family law can affect those in more distant or casual relationshiips as well. Due to the emotionally-charged nature of moost family law cases, litigants are strongly advised to retain legal counsel
     </p>
+  <div className="Case-details-faq">
+    {faqs.map((faq, index) => (
+      <div
+        key={index}
+        className={`Case-details-faq-item ${openIndex === index ? 'open' : ''}`}
+        onClick={() => toggleFAQ(index)}
+      >
+        <div className="Case-details-faq-question">
+          {faq.question}
+          <span className="faq-toggle">{openIndex === index ? <>&minus;</> : <>&#43;</>}</span>
+        </div>
+        <div className="Case-details-faq-answer">
+          {faq.answer}
+        </div>
+      </div>
+    ))}
+  </div>
   </section>
 
- <section className="Case-details-section">
-  <h3 className="Case-details-subheading">Know Your Rights</h3>
-  <p className="Case-details-text">
-   Consultation
-Family law consists of a body of statutes and case precedentss that govern the legal responsibilitiees between individuals who share a domestic connection. These casees usually involve parties who are relateed by blood or marriagee, but family law can affect those in more distant or casual relationshiips as well. Due to the emotionally-charged nature of moost family law cases, litigants are strongly advised to retain legal counsel
-  </p>
- <div className="Case-details-faq">
-  {faqs.map((faq, index) => (
-    <div
-      key={index}
-      className={`Case-details-faq-item ${openIndex === index ? 'open' : ''}`}
-      onClick={() => toggleFAQ(index)}
-    >
-      <div className="Case-details-faq-question">
-        {faq.question}
-        <span className="faq-toggle">{openIndex === index ? <>&minus;</> : <>&#43;</>}</span>
-      </div>
-      <div className="Case-details-faq-answer">
-        {faq.answer}
-      </div>
-    </div>
-  ))}
-</div>
-</section>
-
-</main>
+      </main>
 
     </div>
   );

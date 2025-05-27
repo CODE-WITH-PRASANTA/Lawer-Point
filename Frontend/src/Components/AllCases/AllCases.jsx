@@ -48,6 +48,7 @@ const AllCases = () => {
 
   return (
     <div className="All-Cases-Container">
+      
       <aside className="All-Cases-Sidebar">
         <h3 className="All-Cases-Sidebar-Title">Practice Areas</h3>
         <Link
@@ -85,7 +86,6 @@ const AllCases = () => {
           ))}
         </div>
       </aside>
-
       <main className="All-Cases-Content">
         {filteredAreas.length > 0 ? (
           filteredAreas.map(area => {
@@ -116,6 +116,7 @@ const AllCases = () => {
           <p className="All-Cases-No-Result">No practice area found for "{selectedArea}"</p>
         )}
       </main>
+
     </div>
   );
 };
