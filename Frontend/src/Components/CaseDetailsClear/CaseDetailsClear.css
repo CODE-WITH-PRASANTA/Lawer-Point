@@ -1,0 +1,376 @@
+
+/* Sidebar */
+.All-Cases-Sidebar {
+  width: 280px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.All-Cases-Sidebar-Title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+  border-bottom: 3px solid #c8a96a;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.All-Cases-Sidebar-Link {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+  background: #f1f1f1;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.All-Cases-Sidebar-Link:hover {
+  background-color: #e0d6c5;
+}
+
+.All-Cases-Sidebar-Link.active {
+  background-color: #c8a96a;
+  color: #ffffff;
+}
+
+/* Brochures */
+.All-Cases-Brochure-Section {
+  margin-top: 2rem;
+}
+
+.All-Cases-Brochure-Title {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.All-Cases-Brochure-Divider {
+  height: 2px;
+  width: 50px;
+  background-color: #c8a96a;
+  margin-bottom: 1rem;
+}
+
+.All-Cases-Brochure-Link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.All-Cases-Brochure-Link:hover {
+  color: #b52e31;
+}
+
+.All-Cases-PDF-Icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Fullpage  */
+
+.CaseDetailsClear-Container {
+  display: flex;
+    padding: 2rem;
+    background-color: #f9fafc;
+    font-family: 'Segoe UI', sans-serif;
+    margin: auto;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.All-Cases-Sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: auto; /* Adjust as needed */
+}
+
+.CaseDetailsClear-MainContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+
+.Case-details-main-content {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.Case-details-top-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.Case-details-image {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.Case-details-topic-box {
+  flex: 1;
+  background-color: #0f2e52;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
+.Case-details-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+}
+
+.Case-details-topic-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2rem;
+}
+
+.Case-details-topic-list li::before {
+  content: "➜ ";
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.Case-details-consultation-btn {
+  margin-top: 2rem;
+  background-color: #0c2a4c;      /* Deep navy blue */
+  color: #ffffff;
+  padding: 0.85rem 2rem;          /* Slightly bigger for better click area */
+  border-radius: 6px;             /* Slightly rounder */
+  font-weight: 600;               /* Semi-bold for clarity */
+  font-size: 1rem;                /* Comfortable readable size */
+  letter-spacing: 0.05em;         /* Spacing for better text legibility */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(12, 42, 76, 0.3); /* Subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  display: inline-block;
+  text-align: center;
+border: 2px solid #c7a873;
+}
+
+.Case-details-consultation-btn:hover {
+  background-color: #123a66;   /* Slightly lighter navy */
+  box-shadow: 0 6px 12px rgba(18, 58, 102, 0.5);
+  transform: translateY(-2px);
+}
+
+.Case-details-consultation-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(12, 42, 76, 0.2);
+}
+
+/* Optional: focus style for accessibility */
+.Case-details-consultation-btn:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+
+.Case-details-section {
+  margin-top: 2rem;
+}
+
+.Case-details-subheading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 2px solid #c7a873;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+}
+
+.Case-details-text {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+.Case-details-info-links {
+  display: grid;
+  gap: 1rem;
+}
+
+.Case-details-info-link {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-left: 4px solid #c7a873;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Case-details-info-link:hover {
+  background-color: #f2f2f2;
+  transform: translateX(3px);
+}
+
+.Case-details-faq-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.Case-details-faq-item:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Case-details-faq-question {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.Case-details-faq-item.open .Case-details-faq-question {
+  color: #0f2e52; /* Change color when open */
+}
+
+.Case-details-faq-answer {
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  padding: 0 15px;
+}
+
+.Case-details-faq-item.open .Case-details-faq-answer {
+  max-height: 500px; /* Adjust according to your content size */
+  padding: 15px;
+  transition: max-height 0.6s ease-in, padding 0.6s ease-in;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  color: #e94e77;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.Case-details-faq-item.open .faq-toggle {
+  transform: rotate(45deg); /* Rotate plus sign to minus */
+}
+
+
+/* Tablet View */
+@media (max-width: 992px) {
+  .CaseDetailsClear-Container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .All-Cases-Sidebar {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .Case-details-main-content {
+    padding: 1rem;
+  }
+  .Case-details-top-section {
+    flex-direction: column;
+  }
+  .Case-details-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .Case-details-topic-box {
+    margin-left: 0;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .CaseDetailsClear-Container {
+    padding: 0.5rem;
+  }
+  .All-Cases-Sidebar {
+    padding: 1rem;
+  }
+  .Case-details-main-content {
+    padding: 0.5rem;
+  }
+  .Case-details-top-section {
+    margin-bottom: 1rem;
+  }
+  .Case-details-image {
+    border-radius: 0;
+  }
+  .Case-details-topic-box {
+    padding: 1rem;
+  }
+  .Case-details-subheading {
+    font-size: 1.2rem;
+  }
+  .Case-details-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+  .CaseDetailsClear-Container {
+    padding: 0;
+  }
+  .All-Cases-Sidebar {
+    padding: 0.5rem;
+  }
+  .Case-details-main-content {
+    padding: 0.5rem;
+  }
+  .Case-details-top-section {
+    margin-bottom: 0.5rem;
+  }
+  .Case-details-image {
+    max-width: 100%;
+  }
+  .Case-details-topic-box {
+    padding: 0.5rem;
+  }
+  .Case-details-subheading {
+    font-size: 1rem;
+  }
+  .Case-details-text {
+    font-size: 0.8rem;
+  }
+  .Case-details-faq-question {
+    font-size: 0.9rem;
+  }
+  .Case-details-faq-answer {
+    font-size: 0.8rem;
+  }
+}

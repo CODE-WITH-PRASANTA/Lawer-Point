@@ -1,0 +1,302 @@
+.All-Cases-Container {
+  display: flex;
+  padding: 2rem;
+  background-color: #f9fafc;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 2rem;
+}
+
+/* Sidebar */
+.All-Cases-Sidebar {
+  width: 280px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.All-Cases-Sidebar-Title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+  border-bottom: 3px solid #c8a96a;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.All-Cases-Sidebar-Link {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+  background: #f1f1f1;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.All-Cases-Sidebar-Link:hover {
+  background-color: #e0d6c5;
+}
+
+.All-Cases-Sidebar-Link.active {
+  background-color: #c8a96a;
+  color: #ffffff;
+}
+
+/* Brochures */
+.All-Cases-Brochure-Section {
+  margin-top: 2rem;
+}
+
+.All-Cases-Brochure-Title {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.All-Cases-Brochure-Divider {
+  height: 2px;
+  width: 50px;
+  background-color: #c8a96a;
+  margin-bottom: 1rem;
+}
+
+.All-Cases-Brochure-Link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.All-Cases-Brochure-Link:hover {
+  color: #b52e31;
+}
+
+.All-Cases-PDF-Icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+/* All-Cases-Content - Grid Layout */
+.All-Cases-Content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem 0;
+  justify-items: center;
+  align-items: start;
+  margin: auto;
+}
+
+/* Card Styling */
+.All-Cases-Card {
+  width: 100%;
+  max-width: 350px;
+  min-height: 460px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.All-Cases-Card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.All-Cases-Image-Wrap {
+  height: 180px;
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.All-Cases-Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Icon Styling */
+.All-Cases-Icon {
+  font-size: 2.5rem;
+  color: #c8a96a;
+  margin-bottom: 0.75rem;
+}
+
+/* Name & Description */
+.All-Cases-Name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2d2d2d;
+}
+
+.All-Cases-Description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* No Result Message */
+.All-Cases-No-Result {
+  font-size: 1.1rem;
+  color: red;
+  padding: 1rem;
+  grid-column: span 3;
+  text-align: center;
+}
+
+
+.All-Cases-Icon {
+  font-size: 2.2rem;
+  color: #c8a96a;
+  margin-bottom: 0.75rem;
+}
+
+.All-Cases-Name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2d2d2d;
+}
+
+
+.All-Cases-No-Result {
+  font-size: 1.1rem;
+  color: red;
+  padding: 1rem;
+}
+
+.ReadMoreBtn {
+  background: none;
+  border: none;
+  color: #e94e77;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+
+.All-Cases-PDF-Container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.All-Cases-PDF-Container:hover {
+  background-color: #f0f0f0;
+}
+
+.All-Cases-PDF-Name {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.All-Cases-PDF-Arrow {
+  margin-left: auto;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.All-Cases-Brochure-Link:hover .All-Cases-PDF-Arrow {
+  transform: translateX(4px);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .All-Cases-Container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .All-Cases-Sidebar {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .All-Cases-Content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .All-Cases-Content {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .All-Cases-Card {
+    max-width: 100%;
+  }
+
+  .All-Cases-Sidebar-Link {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .All-Cases-Sidebar-Title,
+  .All-Cases-Brochure-Title {
+    font-size: 1.1rem;
+  }
+
+  .All-Cases-Brochure-Link {
+    font-size: 0.9rem;
+  }
+
+  .All-Cases-PDF-Icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .All-Cases-Container {
+    padding: 1rem 0.5rem;
+  }
+
+  .All-Cases-Card {
+    padding: 1rem;
+  }
+
+  .All-Cases-Image-Wrap {
+    height: 160px;
+  }
+
+  .All-Cases-Icon {
+    font-size: 2rem;
+  }
+
+  .All-Cases-Name {
+    font-size: 1.05rem;
+  }
+
+  .All-Cases-Description {
+    font-size: 0.9rem;
+  }
+
+  .All-Cases-No-Result {
+    font-size: 1rem;
+  }
+}

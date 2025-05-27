@@ -48,7 +48,7 @@ const Navbar = () => {
             <li className="navbar-link-item"><Link to="/pricing-details">Pricing & Details</Link></li>
             <li className="navbar-link-item"><Link to="/faqs">FAQs</Link></li>
             <li className="navbar-link-item"><Link to="/news">News</Link></li>
-            <li className="navbar-link-item"><Link to="/contact-us">Contact Us</Link></li>
+            <li className="navbar-link-item"><Link to="/contact">Contact Us</Link></li>
           </ul>
 
           <div className="navbar-main-right">
@@ -77,7 +77,7 @@ const Navbar = () => {
           <li><Link to="/pricing-details" onClick={() => setIsMobileMenuOpen(false)}>Pricing & Details</Link></li>
           <li><Link to="/faqs" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
           <li><Link to="/news" onClick={() => setIsMobileMenuOpen(false)}>News</Link></li>
-          <li><Link to="/contact-us" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
+          <li><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
         </ul>
 
         <a href={whatsAppLink} target="_blank" rel="noopener noreferrer">

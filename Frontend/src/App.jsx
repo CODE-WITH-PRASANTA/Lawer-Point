@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import './App.css';
-import Home from './Pages/Home/Home';
 import DownFooter from './Components/DownFooter/DownFooter';
 import { Suspense, lazy, useState, useEffect } from 'react';
 import { Atom } from 'react-loading-indicators';
@@ -9,6 +8,10 @@ import WhatsAppBubble from './Components/WhatsAppBubble/WhatsAppBubble';
 
 const HomeLazy = lazy(() => import('./Pages/Home/Home'));
 const AboutLazy = lazy(() => import('./Pages/AboutUs/Aboutus'));
+const AppointmentLazy = lazy(() => import('./Pages/Appointment/Appointment'));
+const ContactLazy = lazy(() => import('./Pages/ContactUs/ContactUs'));
+const CasesLazy = lazy(() => import('./Pages/Cases/Cases'));
+const CasesDetailsLazy = lazy(() => import('./Components/CaseDetails/CaseDetails'));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -49,6 +52,42 @@ function App() {
               </div>
             }>
               <AboutLazy />
+            </Suspense>
+          } />
+          <Route path="/appointment" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <AppointmentLazy />
+            </Suspense>
+          } />
+          <Route path="/contact" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <ContactLazy />
+            </Suspense>
+          } />
+          <Route path="/cases" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <CasesLazy />
+            </Suspense>
+          } />
+          <Route path="/cases/:area" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <CasesDetailsLazy />
             </Suspense>
           } />
         </Routes>
