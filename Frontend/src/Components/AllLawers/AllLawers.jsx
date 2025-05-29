@@ -1,9 +1,10 @@
-import React from 'react'
-import './AllLawers.css'
+import React from 'react';
+import './AllLawers.css';
+import { useNavigate } from 'react-router-dom'; // ✅ Import
 
-// Asserts
-import Lawer1 from '../../assets/Lawer-1.webp'
-import Lawer2 from '../../assets/Lawer-2.webp'
+// Assets
+import Lawer1 from '../../assets/Lawer-1.webp';
+import Lawer2 from '../../assets/Lawer-2.webp';
 
 import {
   FaPhoneAlt,
@@ -73,14 +74,23 @@ const attorneysData = [
   },
 ];
 
-
 const AllLawers = () => {
+  const navigate = useNavigate(); // ✅ Hook
+
+  const handleLawyerClick = () => {
+    navigate("/appointment/booking"); // ✅ Navigation
+  };
+
   return (
-    <div>
-  <div className="All-Lawer-Container">
+    <div className="All-Lawer-Container">
       <div className="All-Lawer-Wrapper">
         {attorneysData.map((attorney, index) => (
-          <div className="All-Lawer-Card" key={index}>
+          <div
+            className="All-Lawer-Card"
+            key={index}
+            onClick={handleLawyerClick}
+            style={{ cursor: 'pointer' }} // ✅ Pointer cursor
+          >
             <div className="All-Lawer-Image">
               <img src={attorney.image} alt={attorney.name} />
             </div>
@@ -103,9 +113,7 @@ const AllLawers = () => {
         ))}
       </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default AllLawers
+export default AllLawers;

@@ -1,0 +1,100 @@
+.Faq-Question-Container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.Faq-Question-Tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.Faq-Question-Tab {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.Faq-Question-Tab.active {
+  background-color: #1f2c4d;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.Faq-Question-List {
+  border-top: 1px solid #ddd;
+}
+
+.Faq-Question-Item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.Faq-Question-Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Faq-Question-Header:hover {
+  background-color: #f9f9f9;
+}
+
+.Faq-Question-Icon {
+  color: #1f2c4d;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.Faq-Question-Title {
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.Faq-Question-ToggleIcon {
+  font-size: 20px;
+  color: #1f2c4d;
+  transition: transform 0.2s ease;
+}
+
+.Faq-Question-Answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 10px;
+  background: #fafafa;
+  color: #444;
+}
+
+.Faq-Question-Answer.open {
+  padding: 12px 20px;
+  max-height: 300px; /* enough for a paragraph */
+}
+
+.Faq-Question-Answer p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.Faq-Question-NoFaq {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+  font-size: 15px;
+}

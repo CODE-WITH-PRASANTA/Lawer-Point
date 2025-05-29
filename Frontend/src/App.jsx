@@ -13,6 +13,8 @@ const ContactLazy = lazy(() => import('./Pages/ContactUs/ContactUs'));
 const CasesLazy = lazy(() => import('./Pages/Cases/Cases'));
 const CasesDetailsLazy = lazy(() => import('./Components/CaseDetails/CaseDetails'));
 const PlanandPricingLazy = lazy(() => import('./Pages/PlanandPricing/PlanandPricing'));
+const FaqLazy = lazy(() => import('./Pages/FaqPage/FaqPage'));
+const AppointmentBookingLazy = lazy(() => import('./Components/AppointmentBooking/AppointmentBooking'));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -98,6 +100,24 @@ function App() {
               </div>
             }>
               <PlanandPricingLazy />
+            </Suspense>
+          } />
+          <Route path="/faqs" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <FaqLazy />
+            </Suspense>
+          } />
+          <Route path="/appointment/booking" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <AppointmentBookingLazy />
             </Suspense>
           } />
         </Routes>
