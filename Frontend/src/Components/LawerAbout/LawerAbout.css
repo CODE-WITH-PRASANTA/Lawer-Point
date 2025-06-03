@@ -1,0 +1,419 @@
+/* Lawyer About Container Styles */
+
+.lawyer-about-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  justify-content: center;
+}
+
+.lawyer-about-sidebar {
+  flex: 1 1 250px;
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  color: #fff;
+  background-color: #2c3e50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-about-sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.lawyer-about-attorney-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lawyer-about-attorney-item {
+  padding: 15px;
+  border-bottom: 1px solid #34495e;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.lawyer-about-attorney-item:hover {
+  background-color: #34495e;
+}
+
+.lawyer-about-active {
+  background-color: #34495e;
+  padding: 15px;
+  border-bottom: 1px solid #34495e;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.lawyer-about-profile {
+  flex: 3;
+  padding: 20px;
+}
+
+.lawyer-about-profile-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.lawyer-about-profile-img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.lawyer-about-profile-img:hover {
+  transform: scale(1.1);
+}
+
+.lawyer-about-profile-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.lawyer-about-profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.lawyer-about-profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+
+.lawyer-about-profile-title {
+  font-style: italic;
+  color: #2c3e50;
+}
+
+.lawyer-about-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lawyer-about-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lawyer-about-icon {
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.lawyer-about-description {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.lawyer-about-objective-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.lawyer-about-objective {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.lawyer-about-appointment-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.lawyer-about-appointment {
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.lawyer-about-appointment:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.lawyer-about-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.lawyer-about-social-icon-button {
+  border: 2px solid #2c3e50;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #2c3e50;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.lawyer-about-social-icon-button:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* Education Section Styles */
+
+.lawyer-about-education-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Georgia', serif;
+  color: #444;
+}
+
+.lawyer-about-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-about-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2c3e50;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.lawyer-about-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.lawyer-about-icon-box {
+  background-color: #2c3e50;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.lawyer-about-arrow {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: -1px;
+}
+
+.lawyer-about-text {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #666;
+  text-align: justify;
+}
+
+
+/* Lawyer About Container Styles */
+
+.lawyer-about-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.lawyer-about-sidebar {
+  flex: 1 1 250px;
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  color: #fff;
+  background-color: #2c3e50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-sidebar {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.lawyer-about-profile {
+  flex: 3;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-profile {
+    padding: 10px;
+  }
+}
+
+.lawyer-about-profile-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-profile-main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.lawyer-about-profile-img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-profile-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.lawyer-about-profile-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-profile-content {
+    min-width: 100%;
+  }
+}
+
+.lawyer-about-appointment-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-appointment-container {
+    flex-direction: column;
+  }
+}
+
+.lawyer-about-appointment {
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.lawyer-about-appointment:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.lawyer-about-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-social-icons {
+    margin-top: 20px;
+  }
+}
+
+.lawyer-about-education-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Georgia', serif;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-education-container {
+    padding: 20px 10px;
+  }
+}
+
+.lawyer-about-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .lawyer-about-section {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+.Admin-Navbar-main-content {
+  transition: margin-left 0.3s;
+  margin-left: 0;
+  padding: 20px 20px 20px 20px;
+}
+
+.Admin-Navbar-sidebar-open .Admin-Navbar-main-content {
+  margin-left: 280px;
+}
+
+@media (max-width: 768px) {
+  .Admin-Navbar-sidebar-open .Admin-Navbar-main-content {
+    margin-left: 0;
+  }
+}

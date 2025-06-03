@@ -78,7 +78,7 @@ const AllLawers = () => {
   const navigate = useNavigate(); // ✅ Hook
 
   const handleLawyerClick = () => {
-    navigate("/appointment/booking"); // ✅ Navigation
+    navigate("/lawer/about"); // ✅ Navigation
   };
 
   return (

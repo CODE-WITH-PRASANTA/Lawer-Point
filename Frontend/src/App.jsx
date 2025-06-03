@@ -15,6 +15,9 @@ const CasesDetailsLazy = lazy(() => import('./Components/CaseDetails/CaseDetails
 const PlanandPricingLazy = lazy(() => import('./Pages/PlanandPricing/PlanandPricing'));
 const FaqLazy = lazy(() => import('./Pages/FaqPage/FaqPage'));
 const AppointmentBookingLazy = lazy(() => import('./Components/AppointmentBooking/AppointmentBooking'));
+const NewsLazy = lazy(() => import('./Pages/News/News'));
+const NewsDetailsLazy = lazy(() => import('./Components/NewsDetails/NewsDetails'));
+const LawerAboutLazy = lazy(() => import('./Components/LawerAbout/LawerAbout'));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -118,6 +121,33 @@ function App() {
               </div>
             }>
               <AppointmentBookingLazy />
+            </Suspense>
+          } />
+          <Route path="/news" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <NewsLazy />
+            </Suspense>
+          } />
+          <Route path="/news/:id" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <NewsDetailsLazy />
+            </Suspense>
+          } />
+          <Route path="/lawer/about" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <LawerAboutLazy />
             </Suspense>
           } />
         </Routes>

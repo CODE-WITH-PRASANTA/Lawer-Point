@@ -1,0 +1,202 @@
+
+.Blog-list-Container {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Blog List Header */
+
+.Blog-list-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.Blog-list-Header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Blog List Content */
+
+.Blog-list-Content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Blog-list-Main {
+  flex: 1 1 60%;
+}
+
+.Blog-list-Recent-Posts {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Blog List Card */
+
+.Blog-list-Card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.Blog-list-Card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.Blog-list-Overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  width: 100%;
+}
+
+.Blog-list-Title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Blog-list-Meta {
+  font-size: 14px;
+  display: flex;
+  gap: 15px;
+  color: #ccc;
+}
+
+/* Recent Posts */
+
+.Blog-list-Post {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.Blog-list-Post:hover {
+  transform: translateY(-5px);
+}
+
+.Blog-list-Post img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Blog-list-Post-Info {
+  flex: 1;
+}
+
+.Blog-list-Post-Date {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.Blog-list-Post-Excerpt {
+  color: #777;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Card Section */
+
+.Blog-list-Card-Section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.Blog-list-Card-Item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.Blog-list-Card-Item:hover {
+  transform: translateY(-5px);
+}
+
+.Blog-list-Card-Item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.Blog-list-Card-Meta {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.Blog-list-Card-Content {
+  padding: 20px;
+}
+
+.Blog-list-Card-Content p {
+  font-weight: 600;
+  color: #111;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.Blog-list-Post {
+  position: relative;
+}
+
+.Blog-list-Card-Item {
+  position: relative;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .Blog-list-Content {
+    flex-direction: column;
+  }
+  .Blog-list-Main {
+    flex: 1 1 100%;
+  }
+  .Blog-list-Recent-Posts {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Blog-list-Card-Section {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}

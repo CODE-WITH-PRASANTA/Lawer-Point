@@ -1,0 +1,455 @@
+.Dashboard-Container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e2a38;
+  background-color: #f9fafb;
+}
+
+.Dashboard-Header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.Dashboard-UserInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Dashboard-UserAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-UserDetails h1.Dashboard-WelcomeMessage {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.Dashboard-UserNotifications {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.Dashboard-Actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.Dashboard-Button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Dashboard-MessagesButton {
+  background-color: #1e2a38;
+  color: white;
+}
+
+.Dashboard-MessagesButton:hover {
+  background-color: #2f3e4d;
+}
+
+.Dashboard-SettingsButton {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.Dashboard-SettingsButton:hover {
+  background-color: #7a6ae6;
+}
+
+.Dashboard-Widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.Dashboard-Widget {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.Dashboard-Widget:hover {
+  transform: translateY(-5px);
+}
+
+.Dashboard-WidgetTitle {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.Dashboard-WidgetCount {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.Dashboard-blue {
+  color: #3b82f6;
+}
+
+.Dashboard-red {
+  color: #ef4444;
+}
+
+.Dashboard-orange {
+  color: #f59e0b;
+}
+
+.Dashboard-green {
+  color: #10b981;
+}
+
+.Dashboard-IssuesSummary {
+  display: flex;
+  justify-content: space-between;
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.Dashboard-IssuesChart {
+  flex: 2;
+}
+
+.Dashboard-IssuesOverview {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Dashboard-ToggleButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.Dashboard-ToggleButton {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #e2e8f0;
+  color: #334155;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Dashboard-ToggleButton.Dashboard-Active {
+  background-color: #1e293b;
+  color: white;
+}
+
+.Dashboard-OverviewCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Dashboard-OverviewCard {
+  background-color: #f1f5f9;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Dashboard-OverviewCardValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.Dashboard-OverviewCardLabel {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.Dashboard-New {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.Dashboard-Closed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.Dashboard-TaskScheduleContainer {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Dashboard-TaskDistribution {
+  flex: 1;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.Dashboard-Schedule {
+  flex: 1;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.Dashboard-TaskLabels {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.Dashboard-Dot {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
+
+.Dashboard-Blue {
+  background-color: #3b82f6;
+}
+
+.Dashboard-Indigo {
+  background-color: #6366f1;
+}
+
+.Dashboard-Gray {
+  background-color: #9ca3af;
+}
+
+.Dashboard-Dark {
+  background-color: #111827;
+}
+
+.Dashboard-TaskSummary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.Dashboard-TaskSummaryValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.Dashboard-TaskSummaryLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.Dashboard-ScheduleList {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  color: #374151;
+}
+
+.Dashboard-ScheduleItem {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.Dashboard-ScheduleItem span {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.2rem;
+}
+
+.Dashboard-ChartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Dashboard-ChartTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.Dashboard-ChartLabel {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.Dashboard-TaskDistribution .recharts-wrapper {
+  margin: 0 auto;
+}
+
+.Dashboard-ScheduleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Dashboard-ScheduleItem {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.Dashboard-ScheduleItem:last-child {
+  border-bottom: none;
+}
+
+.Dashboard-ScheduleItem strong {
+  font-weight: 600;
+}
+
+.Dashboard-ScheduleItem span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Existing CSS remains the same */
+
+/* Media Queries */
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+  .Dashboard-Container {
+    padding: 1rem;
+  }
+  .Dashboard-Header {
+    flex-direction: column;
+  }
+  .Dashboard-UserInfo {
+    margin-bottom: 1rem;
+  }
+  .Dashboard-Actions {
+    margin-top: 1rem;
+  }
+  .Dashboard-Widgets {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .Dashboard-IssuesSummary {
+    flex-direction: column;
+  }
+  .Dashboard-IssuesChart {
+    margin-bottom: 2rem;
+  }
+  .Dashboard-TaskScheduleContainer {
+    flex-direction: column;
+  }
+  .Dashboard-TaskDistribution {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .Dashboard-Container {
+    padding: 0.5rem;
+  }
+  .Dashboard-Header {
+    padding: 0.5rem;
+  }
+  .Dashboard-UserInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Dashboard-UserAvatar {
+    width: 40px;
+    height: 40px;
+  }
+  .Dashboard-UserDetails h1.Dashboard-WelcomeMessage {
+    font-size: 18px;
+  }
+  .Dashboard-UserNotifications {
+    font-size: 12px;
+  }
+  .Dashboard-Button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .Dashboard-Widget {
+    padding: 0.5rem;
+  }
+  .Dashboard-WidgetTitle {
+    font-size: 14px;
+  }
+  .Dashboard-WidgetCount {
+    font-size: 24px;
+  }
+  .Dashboard-IssuesSummary {
+    padding: 1rem;
+  }
+  .Dashboard-OverviewCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Dashboard-TaskDistribution .recharts-wrapper {
+    height: 200px !important;
+  }
+  .Dashboard-ScheduleList {
+    padding-left: 0;
+  }
+}
+
+/* Small Mobile View (320px and below) */
+@media (max-width: 320px) {
+  .Dashboard-Container {
+    padding: 0.25rem;
+  }
+  .Dashboard-Header {
+    padding: 0.25rem;
+  }
+  .Dashboard-UserAvatar {
+    width: 30px;
+    height: 30px;
+  }
+  .Dashboard-UserDetails h1.Dashboard-WelcomeMessage {
+    font-size: 16px;
+  }
+  .Dashboard-Widget {
+    padding: 0.25rem;
+  }
+  .Dashboard-OverviewCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

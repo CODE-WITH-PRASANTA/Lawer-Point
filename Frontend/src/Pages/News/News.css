@@ -1,0 +1,157 @@
+.News-Section {
+  background-image: url('../../assets/Appoitment-Bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+.News-Overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(30, 30, 30, 0.8));
+  padding: 110px 20px 100px;
+  text-align: center;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.News-Heading {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.News-Subheading {
+  color: #dddddd;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-style: italic;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.News-Breadcrumb {
+  background-color: #f5e6cd;
+  color: #222;
+  padding: 12px 28px;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0px -3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.News-Breadcrumb:hover {
+  background-color: #f9ead1;
+}
+
+.News-BreadcrumbItem {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.News-BreadcrumbItem:hover {
+  color: #e94e77;
+}
+
+.News-Separator {
+  margin: 0 8px;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Responsive Design */
+
+/* Tablets (landscape and portrait) */
+@media (max-width: 1024px) {
+  .News-Heading {
+    font-size: 2.5rem;
+  }
+
+  .News-Subheading {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+
+  .News-Breadcrumb {
+    font-size: 0.95rem;
+    padding: 10px 22px;
+  }
+}
+
+/* Mobile devices (landscape and portrait) */
+@media (max-width: 768px) {
+  .News-Section {
+    margin-top: 80px;
+    height: 30vh;
+  }
+
+  .News-Heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .News-Subheading {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .News-Breadcrumb {
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    gap: 4px;
+  }
+}
+
+/* Extra small devices (small phones) */
+@media (max-width: 480px) {
+  .News-Heading {
+    font-size: 1.7rem;
+  }
+
+  .News-Subheading {
+    font-size: 0.75rem;
+  }
+
+  .News-Breadcrumb {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+}
