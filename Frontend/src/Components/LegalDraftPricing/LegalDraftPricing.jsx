@@ -1,7 +1,15 @@
 import React from 'react';
 import './LegalDraftPricing.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const LegalDraftPricing = () => {
+   const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/draft/booking");
+  };
+
   return (
     <section className="LegalDraft-pricing-section">
       <p className="LegalDraft-pricing-title">Price Plan</p>
@@ -20,7 +28,7 @@ const LegalDraftPricing = () => {
             <span className="amount">500</span>
             <span className="period">/ Draft</span>
           </div>
-          <button className="LegalDraft-pricing-button">Get Started →</button>
+                   <button className="LegalDraft-pricing-button" onClick={handleGetStarted}>Get Started →</button>
           <ul className="LegalDraft-pricing-features">
             <li>Rent Agreement</li>
             <li>Affidavit or Declaration Draft</li>
@@ -40,7 +48,8 @@ const LegalDraftPricing = () => {
             <span className="amount">600</span>
             <span className="period">/ Draft</span>
           </div>
-          <button className="LegalDraft-pricing-button gold">Get Started →</button>
+                   <button className="LegalDraft-pricing-button" onClick={handleGetStarted}>Get Started →</button>
+
           <ul className="LegalDraft-pricing-features">
             <li>Partnership Agreement Draft</li>
             <li>Consultancy Agreement</li>
@@ -60,7 +69,8 @@ const LegalDraftPricing = () => {
             <span className="amount">700</span>
             <span className="period">/ Draft</span>
           </div>
-          <button className="LegalDraft-pricing-button">Get Started →</button>
+                   <button className="LegalDraft-pricing-button" onClick={handleGetStarted}>Get Started →</button>
+
           <ul className="LegalDraft-pricing-features">
             <li>MoU (Memorandum of Understanding)</li>
             <li>Service Level Agreements (SLA)</li>

@@ -1,0 +1,265 @@
+/* === Container === */
+.Manage-Team-Container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  color: #1e293b;
+}
+
+/* === Header === */
+.Manage-Team-Header {
+  margin-bottom: 2.5rem;
+}
+
+.Manage-Team-Title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+  letter-spacing: 0.03em;
+}
+
+.Manage-Team-Breadcrumb {
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.Manage-Team-Breadcrumb-Active {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+/* === Tabs === */
+.Manage-Team-Tabs-Container {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+  overflow-x: auto;
+  margin-bottom: 3rem;
+}
+
+.Manage-Team-Tabs {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.Manage-Team-Tab-Btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #64748b;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 6px 6px 0 0;
+}
+
+.Manage-Team-Tab-Btn svg {
+  color: #0f766e;
+  font-size: 1.3rem;
+}
+
+.Manage-Team-Tab-Btn.Manage-Team-Tab-Btn-Active {
+  color: #0f766e;
+  border-bottom: 3px solid #0f766e;
+  background: #e0f2f1;
+  box-shadow: 0 3px 6px rgba(15, 118, 110, 0.3);
+}
+
+.Manage-Team-Tab-Btn:hover {
+  color: #0f766e;
+}
+
+/* === Card Grid === */
+/* Center cards and limit max width when less than 3 cards */
+.Manage-Team-Card-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  /* Prevent too wide grid items */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Card === */
+.Manage-Team-Card {
+  background: white;
+  border-radius: 1rem;
+  overflow: visible;
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.15);
+  text-align: center;
+  position: relative;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.Manage-Team-Card-Bg {
+  height: 110px;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.Manage-Team-Avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  border: 5px solid white;
+  object-fit: cover;
+  position: relative;
+  top: 55px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.Manage-Team-Member-Name {
+  margin-top: 60px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+}
+
+.Manage-Team-Member-Role {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+/* === Stats === */
+.Manage-Team-Member-Stats {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto 1.5rem;
+  border-top: 1px dashed #e2e8f0;
+  border-bottom: 1px dashed #e2e8f0;
+  padding: 1.25rem 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.Manage-Team-Stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.Manage-Team-Stat + .Manage-Team-Stat {
+  border-left: 1px dashed #e2e8f0;
+  padding-left: 1rem;
+}
+
+.Manage-Team-Stat strong {
+  font-weight: 700;
+  color: #0f766e;
+}
+
+/* === Description === */
+.Manage-Team-Member-Description {
+  font-size: 1rem;
+  color: #475569;
+  padding: 0 2rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  user-select: text;
+}
+
+/* === Socials === */
+.Manage-Team-Socials {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.social-icon {
+  background: #f0f0f0;
+  color: #334155;
+  border-radius: 50%;
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  font-size: 1.15rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.social-icon.facebook:hover {
+  background: #3b5998;
+  color: white;
+  box-shadow: 0 6px 15px #3b5998;
+}
+
+.social-icon.twitter:hover {
+  background: #1da1f2;
+  color: white;
+  box-shadow: 0 6px 15px #1da1f2;
+}
+
+.social-icon.linkedin:hover {
+  background: #0077b5;
+  color: white;
+  box-shadow: 0 6px 15px #0077b5;
+}
+
+.social-icon.whatsapp:hover {
+  background: #25d366;
+  color: white;
+  box-shadow: 0 6px 15px #25d366;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+  .Manage-Team-Card-Grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .Manage-Team-Title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Manage-Team-Card-Grid {
+    grid-template-columns: 1fr;
+  }
+  .Manage-Team-Title {
+    font-size: 1.8rem;
+  }
+  .Manage-Team-Tabs {
+  
+    align-items: center;
+  }
+  .Manage-Team-Tab-Btn {
+      font-size: 0.6rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

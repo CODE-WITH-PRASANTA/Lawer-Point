@@ -18,6 +18,7 @@ const AppointmentBookingLazy = lazy(() => import('./Components/AppointmentBookin
 const NewsLazy = lazy(() => import('./Pages/News/News'));
 const NewsDetailsLazy = lazy(() => import('./Components/NewsDetails/NewsDetails'));
 const LawerAboutLazy = lazy(() => import('./Components/LawerAbout/LawerAbout'));
+const LegalDraftLazy = lazy(() => import('./Components/LegalDraftBooking/LegalDraftBooking'));
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -148,6 +149,15 @@ function App() {
               </div>
             }>
               <LawerAboutLazy />
+            </Suspense>
+          } />
+          <Route path="/draft/booking" element={
+            <Suspense fallback={
+              <div className="loader-container">
+                <Atom color="#1c1c23" size="medium" text="Loading..." textColor="#1c1c23" />
+              </div>
+            }>
+              <LegalDraftLazy />
             </Suspense>
           } />
         </Routes>

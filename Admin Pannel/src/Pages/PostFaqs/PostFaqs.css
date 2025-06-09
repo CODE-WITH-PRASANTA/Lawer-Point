@@ -1,0 +1,137 @@
+.Post-Faq-Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.5s ease-in;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.Post-Faq-FormSection {
+  flex: 2;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.Post-Faq-Sidebar {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Post-Faq-Heading {
+  font-size: 2rem;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.Post-Faq-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Post-Faq-Item {
+  padding: 1rem 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.Post-Faq-FieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Post-Faq-Label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.Post-Faq-Input,
+.Post-Faq-Textarea,
+.Post-Faq-Select,
+.Post-Faq-SidebarInput {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.Post-Faq-Input:focus,
+.Post-Faq-Textarea:focus,
+.Post-Faq-Select:focus,
+.Post-Faq-SidebarInput:focus {
+  border-color: #6366f1;
+  outline: none;
+  background-color: #fff;
+}
+
+.Post-Faq-Textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.Post-Faq-Button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.75rem;
+}
+
+.Post-Faq-Button.Add {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.Post-Faq-Button.Submit {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.Post-Faq-Button.Green {
+  background-color: #10b981;
+  color: white;
+  margin-left: 20px;
+}
+
+.Post-Faq-Button:hover {
+  filter: brightness(1.05);
+}
+
+.Post-Faq-SidebarHeading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.Post-Faq-CategoryList {
+  margin-top: 1.25rem;
+}
+
+.Post-Faq-CategoryList ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.Post-Faq-CategoryList li {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}

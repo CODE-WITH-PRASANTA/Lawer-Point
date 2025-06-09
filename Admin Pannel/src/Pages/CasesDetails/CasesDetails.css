@@ -1,0 +1,161 @@
+.Case-Details-Container {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.Case-Details-Heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #E94e77;
+  margin-bottom: 30px;
+  border-bottom: 2px dashed #E94e77;
+  padding-bottom: 12px;
+}
+
+.Case-Details-Group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Case-Details-Label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+}
+
+.Case-Details-Input,
+.Case-Details-Textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.Case-Details-Input:focus,
+.Case-Details-Textarea:focus {
+  border-color: #E94e77;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(233, 78, 119, 0.1);
+}
+
+.Case-Details-FileName {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.Case-Details-DynamicInput,
+.Case-Details-FAQGroup {
+  background: #fdf5f7;
+  border: 1px dashed #eec5d2;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Case-Details-AddBtn,
+.Case-Details-RemoveBtn {
+  background: linear-gradient(to right, #E94e77, #ff6a95);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.Case-Details-RemoveBtn {
+  background: linear-gradient(to right, #d9534f, #ff7b73);
+}
+
+.Case-Details-AddBtn:hover,
+.Case-Details-RemoveBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Case-Details-SubmitBtn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to right, #007bff, #3399ff);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease;
+}
+
+.Case-Details-SubmitBtn:hover {
+  background: linear-gradient(to right, #0056b3, #227cda);
+}
+
+/* ✅ RESPONSIVE BREAKPOINTS */
+@media (max-width: 768px) {
+  .Case-Details-Container {
+    padding: 25px 20px;
+    margin: 30px 15px;
+  }
+
+  .Case-Details-Heading {
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+
+  .Case-Details-Input,
+  .Case-Details-Textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .Case-Details-AddBtn,
+  .Case-Details-RemoveBtn {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .Case-Details-SubmitBtn {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Case-Details-Container {
+    padding: 20px 15px;
+  }
+
+  .Case-Details-Heading {
+    font-size: 24px;
+  }
+
+  .Case-Details-AddBtn,
+  .Case-Details-RemoveBtn {
+    font-size: 12px;
+  }
+
+  .Case-Details-SubmitBtn {
+    font-size: 15px;
+  }
+}

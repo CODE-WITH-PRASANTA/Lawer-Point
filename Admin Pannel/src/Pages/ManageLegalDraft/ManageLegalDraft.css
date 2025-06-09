@@ -1,0 +1,224 @@
+.Mnage-Legadraft-Serviice-Container {
+  padding: 3rem 2rem;
+  max-width: 1300px;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+.Mnage-Legadraft-Serviice-Heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.5px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.Mnage-Legadraft-Serviice-Subheading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #3b82f6;
+  padding-left: 14px;
+  background-color: #eff6ff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.Mnage-Legadraft-Serviice-Grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+
+.Mnage-Legadraft-Serviice-Left,
+.Mnage-Legadraft-Serviice-Right {
+  flex: 1;
+  min-width: 370px;
+}
+
+.Mnage-Legadraft-Serviice-Card {
+  background: #ffffff;
+  padding: 1.5rem 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.Mnage-Legadraft-Serviice-Card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.Mnage-Legadraft-Serviice-PlanTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  border-bottom: 2px dashed #cbd5e1;
+  padding-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Mnage-Legadraft-Serviice-Input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 12px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  font-size: 1rem;
+  color: #1f2937;
+  transition: all 0.2s ease;
+}
+
+.Mnage-Legadraft-Serviice-Input:focus {
+  border-color: #2563eb;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.Mnage-Legadraft-Serviice-CategoryRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.Mnage-Legadraft-Serviice-CategoryRow input {
+  flex: 1;
+}
+
+.Mnage-Legadraft-Serviice-BtnPrimary {
+  background: #10b981;
+  color: white;
+  padding: 0.65rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-right: 20px;
+}
+
+.Mnage-Legadraft-Serviice-BtnPrimary:hover {
+  background: #059669;
+  transform: scale(1.03);
+}
+
+.Mnage-Legadraft-Serviice-BtnSubmit {
+  background: #2563eb;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Mnage-Legadraft-Serviice-BtnSubmit:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.Mnage-Legadraft-Serviice-BtnSmall {
+  background: #e2e8f0;
+  color: #1e293b;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.Mnage-Legadraft-Serviice-BtnSmall:hover {
+  background: #cbd5e1;
+}
+
+/* Responsive Design: Media Queries for Modern UI */
+
+/* For tablets and medium screens */
+@media (max-width: 992px) {
+  .Mnage-Legadraft-Serviice-Grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Mnage-Legadraft-Serviice-Left,
+  .Mnage-Legadraft-Serviice-Right {
+    min-width: 100%;
+  }
+
+  .Mnage-Legadraft-Serviice-Card {
+    padding: 1.2rem;
+  }
+
+  .Mnage-Legadraft-Serviice-Heading {
+    font-size: 2rem;
+  }
+
+  .Mnage-Legadraft-Serviice-Subheading {
+    font-size: 1.3rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .Mnage-Legadraft-Serviice-Container {
+    padding: 1.5rem 1rem;
+  }
+
+  .Mnage-Legadraft-Serviice-Heading {
+    font-size: 1.7rem;
+  }
+
+  .Mnage-Legadraft-Serviice-Subheading {
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+
+  .Mnage-Legadraft-Serviice-Input {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .Mnage-Legadraft-Serviice-BtnPrimary,
+  .Mnage-Legadraft-Serviice-BtnSubmit,
+  .Mnage-Legadraft-Serviice-BtnSmall {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.65rem 1rem;
+    margin-right: 0;
+  }
+
+  .Mnage-Legadraft-Serviice-CategoryRow {
+    flex-direction: column;
+  }
+
+  .Mnage-Legadraft-Serviice-PlanTitle {
+    font-size: 1.1rem;
+  }
+
+  .Mnage-Legadraft-Serviice-Card {
+    padding: 1rem;
+  }
+}

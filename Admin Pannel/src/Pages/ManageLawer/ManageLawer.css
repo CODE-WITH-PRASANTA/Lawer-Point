@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #e94e77;
+  --primary-hover: #d33a67;
+  --success-color: #4CAF50;
+  --success-hover: #3f9742;
+  --text-dark: #1f1f1f;
+  --text-light: #555;
+  --bg-light: #fafafa;
+  --border-color: #ddd;
+  --card-bg: #ffffff;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+.Manage-Lawer-Container {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  font-family: var(--font-main);
+  transition: all 0.3s ease;
+}
+
+.Manage-Lawer-Heading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  border-bottom: 4px solid var(--primary-color);
+  padding-bottom: 12px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+.Manage-Lawer-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.Manage-Lawer-Section {
+  background: linear-gradient(to top left, #fff, #fdf1f5);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-left: 6px solid var(--primary-color);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.Manage-Lawer-Section:hover {
+  transform: translateY(-4px);
+}
+
+.Manage-Lawer-SubHeading {
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed #f1c1cf;
+  padding-bottom: 5px;
+}
+
+.Manage-Lawer-Row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Manage-Lawer-Input-Group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.Manage-Lawer-Input-Group label {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-light);
+}
+
+.Manage-Lawer-Input,
+.Manage-Lawer-Textarea {
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Manage-Lawer-Input:focus,
+.Manage-Lawer-Textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(233, 78, 119, 0.3);
+}
+
+.Manage-Lawer-Textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.Manage-Lawer-AddBtn {
+  width: fit-content;
+  padding: 10px 20px;
+  background: linear-gradient(to right, var(--primary-color), #ff89a8);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 12px;
+  box-shadow: 0 4px 12px rgba(233, 78, 119, 0.2);
+  transition: background 0.3s ease;
+}
+
+.Manage-Lawer-AddBtn:hover {
+  background: linear-gradient(to right, var(--primary-hover), #f97a9d);
+}
+
+.Manage-Lawer-SubmitBtn {
+  padding: 14px 30px;
+  font-size: 16px;
+  background: linear-gradient(to right, var(--success-color), #6fd072);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 600;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.Manage-Lawer-SubmitBtn:hover {
+  background: linear-gradient(to right, var(--success-hover), #5cbf65);
+}
+
+.Manage-Lawer-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Manage-Lawer-Container {
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .Manage-Lawer-Heading {
+    font-size: 26px;
+  }
+
+  .Manage-Lawer-Section {
+    padding: 16px;
+  }
+
+  .Manage-Lawer-SubHeading {
+    font-size: 18px;
+  }
+}

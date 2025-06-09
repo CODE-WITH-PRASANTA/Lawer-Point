@@ -1,0 +1,232 @@
+.Achivment-category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.Achivment-category-left,
+.Achivment-category-right {
+  flex: 1;
+  min-width: 350px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.Achivment-category-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: #2c3e50;
+  font-weight: 700;
+  border-left: 4px solid #e94e77;
+  padding-left: 0.75rem;
+}
+
+.Achivment-category-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border 0.3s;
+}
+
+.Achivment-category-input:focus {
+  border-color: #e94e77;
+  outline: none;
+  background-color: #fff;
+}
+
+.Achivment-category-btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(135deg, #e94e77, #ff6a88);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 12px rgba(233, 78, 119, 0.3);
+}
+
+.Achivment-category-btn:hover {
+  background: linear-gradient(135deg, #d03b65, #e94e77);
+}
+
+.Achivment-category-table {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.Achivment-category-table th {
+  background-color: #f0f3f5;
+  color: #34495e;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.Achivment-category-table td {
+  background-color: #fff;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  color: #2d3436;
+  vertical-align: middle;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+.Achivment-category-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e4e4e4;
+}
+
+.Achivment-category-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: color 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.Achivment-category-icon-btn.edit {
+  color: #3498db;
+}
+
+.Achivment-category-icon-btn.delete {
+  color: #e74c3c;
+}
+
+.Achivment-category-icon-btn:hover {
+  transform: scale(1.15);
+}
+
+/* Tablet and below */
+@media (max-width: 992px) {
+  .Achivment-category-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .Achivment-category-left,
+  .Achivment-category-right {
+    padding: 1.5rem;
+    border-radius: 14px;
+  }
+
+  .Achivment-category-title {
+    font-size: 1.4rem;
+  }
+
+  .Achivment-category-input {
+    font-size: 0.95rem;
+  }
+
+  .Achivment-category-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.65rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .Achivment-category-table th,
+  .Achivment-category-table td {
+    font-size: 0.9rem;
+  }
+
+  .Achivment-category-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .Achivment-category-container {
+    padding: 1rem;
+  }
+
+  .Achivment-category-title {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+
+  .Achivment-category-left,
+  .Achivment-category-right {
+    padding: 1rem;
+  }
+
+  .Achivment-category-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .Achivment-category-table {
+    overflow-x: auto;
+    text-align: center;
+  }
+
+  .Achivment-category-table th,
+  .Achivment-category-table td {
+    white-space: nowrap;
+    padding: 0.6rem;
+  }
+
+  .Achivment-category-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .Achivment-category-icon-btn {
+    margin-right: 0.3rem;
+  }
+}
+
+/* New section for client review */
+.Achivment-category-review {
+  flex: 1;
+  min-width: 350px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Responsive: allow 3 sections in row for large screens */
+@media (min-width: 1200px) {
+  .Achivment-category-container {
+    flex-wrap: nowrap;
+  }
+}
+
+/* For smaller screens, keep stacking */
+@media (max-width: 992px) {
+  .Achivment-category-review {
+    padding: 1.5rem;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Achivment-category-review {
+    padding: 1rem;
+  }
+}

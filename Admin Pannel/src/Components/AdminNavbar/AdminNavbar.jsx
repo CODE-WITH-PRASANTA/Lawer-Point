@@ -12,7 +12,11 @@ import {
   Download,
   AlertTriangle,
   FileText, 
-  Edit 
+  Edit,
+  Users ,
+  FileEdit,
+  HelpCircle,
+  Briefcase 
 } from 'lucide-react';
 import i1 from '../../assets/C1.webp';
 import './AdminNavbar.css';
@@ -21,7 +25,14 @@ const menuItems = [
   { name: 'Dashboard', icon: <Home />, path: '/dashboard' },
   { name: 'Create Blogs', icon: <Edit />, path: '/createblog' },
   { name: 'Blog List', icon: <FileText />, path: '/bloglist' },
+  { name: 'Manage Lawyer', icon: <User />, path: '/managelawyer' },
+  { name: 'Team Members', icon: <Users />, path: '/teammembers' },
+  { name: 'Legal Draft Service', icon: <FileEdit />, path: '/managelegaldraft' },
+  { name: 'Post FAQ', icon: <HelpCircle />, path: '/postfaq' },
+  { name: 'Cases Details', icon: <Briefcase />, path: '/casesdetails' },
+  { name: 'Achievements & Category', icon: <Download />, path: '/achievementphotos' }, // ✅ NEW SECTION
 ];
+
 
 const avatarMenuItems = [
   { icon: <User size={16} />, label: 'Profile' },
@@ -97,6 +108,7 @@ const AdminNavbar = () => {
           ))}
         </nav>
       </div>
+      
       <div className="Admin-Navbar-main-content">
         <nav className={`Admin-Navbar-navbar ${sidebarOpen ? 'Admin-Navbar-sidebar-open' : ''}`}>
           <div className="Admin-Navbar-menu-icon" onClick={toggleSidebar}>
